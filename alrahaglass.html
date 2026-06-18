@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL RAHA GLASS WORLD & HOME DECOR | Malappuram, Kerala</title>
+<meta name="description" content="Premium quality glass, mirrors and architectural solutions for homes, offices and commercial spaces in Malappuram, Kerala.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --teal:#0F9D94;
+  --teal-dark:#0a7a72;
+  --teal-light:#e8f5f4;
+  --orange:#F79A1E;
+  --orange-dark:#d97f0f;
+  --dark:#1E293B;
+  --mid:#334155;
+  --gray:#64748B;
+  --light:#F8FAFC;
+  --white:#ffffff;
+  --border:#E2E8F0;
+}
+body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--dark);overflow-x:hidden;line-height:1.6}
+
+/* ── UTILITY ── */
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.section-badge{display:inline-block;color:var(--teal);font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px}
+.section-title{font-size:clamp(26px,3.5vw,40px);font-weight:800;color:var(--dark);margin-bottom:10px;line-height:1.2}
+.section-title span{color:var(--orange)}
+.divider{width:48px;height:3px;background:var(--orange);border-radius:2px;margin-bottom:40px}
+.divider.center{margin-left:auto;margin-right:auto}
+.text-center{text-align:center}
+.btn-teal{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:all .25s}
+.btn-teal:hover{background:var(--teal-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(15,157,148,.3)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--dark);color:var(--dark);padding:11px 24px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:all .25s}
+.btn-outline:hover{border-color:var(--teal);color:var(--teal)}
+.btn-orange{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;padding:13px 30px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:all .25s}
+.btn-orange:hover{background:var(--orange-dark);transform:translateY(-2px)}
+
+/* ── NAV ── */
+header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);z-index:1000;border-bottom:1px solid var(--border);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.1)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+/* Logo */
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-img-wrap{display:flex;align-items:center}
+.logo-img-wrap img{height:48px;width:auto}
+.logo-fallback{display:flex;align-items:center;gap:8px}
+.logo-icon{width:48px;height:48px;background:var(--teal-light);border-radius:12px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.logo-icon svg{width:32px;height:32px}
+.logo-wordmark{line-height:1.1}
+.logo-wordmark strong{display:block;font-size:16px;color:var(--orange);font-weight:900;letter-spacing:.5px}
+.logo-wordmark span{font-size:9px;color:var(--gray);letter-spacing:1.2px;text-transform:uppercase}
+/* Desktop nav */
+.nav-links{display:flex;gap:0;list-style:none}
+.nav-links li a{display:block;padding:8px 14px;color:var(--mid);font-size:13px;font-weight:500;text-decoration:none;border-radius:6px;transition:.2s;position:relative}
+.nav-links li a:hover{color:var(--teal)}
+.nav-links li a.active{color:var(--teal)}
+.nav-links li a.active::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:2px;background:var(--orange);border-radius:1px}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.call-btn{background:var(--orange);color:#fff;padding:9px 18px;border-radius:25px;font-size:13px;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:6px;transition:.2s}
+.call-btn:hover{background:var(--orange-dark)}
+/* Hamburger */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border-radius:6px;transition:.2s}
+.hamburger:hover{background:var(--light)}
+.hamburger span{width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0;transform:translateX(-8px)}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+/* Mobile menu */
+.mob-menu{display:none;position:fixed;top:68px;left:0;right:0;bottom:0;background:#fff;overflow-y:auto;z-index:999;padding:20px;transform:translateX(100%);transition:transform .3s}
+.mob-menu.open{transform:translateX(0)}
+.mob-menu a{display:flex;align-items:center;gap:12px;padding:14px 12px;color:var(--dark);text-decoration:none;font-size:15px;font-weight:500;border-bottom:1px solid var(--border);border-radius:8px;transition:.2s}
+.mob-menu a:hover{background:var(--light);color:var(--teal)}
+.mob-menu a:last-child{border-bottom:none}
+.mob-call{margin-top:20px;background:var(--orange);color:#fff;padding:15px;border-radius:10px;text-align:center;font-weight:700;font-size:15px;text-decoration:none;display:block}
+
+/* ── HERO ── */
+.hero{margin-top:68px;display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 68px);overflow:hidden}
+.hero-content{display:flex;flex-direction:column;justify-content:center;padding:60px 40px 60px 0;background:var(--white)}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.eyebrow-dot{width:8px;height:8px;background:var(--orange);border-radius:50%}
+.eyebrow-text{color:var(--teal);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.hero h1{font-size:clamp(34px,4.5vw,58px);font-weight:900;line-height:1.1;color:var(--dark);margin-bottom:22px}
+.hero h1 em{color:var(--orange);font-style:normal;display:block}
+.hero-sub{color:var(--gray);font-size:16px;line-height:1.75;max-width:440px;margin-bottom:36px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.hero-feats{display:flex;flex-direction:column;gap:12px}
+.feat{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--mid)}
+.feat-check{width:22px;height:22px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feat-check svg{width:12px;height:12px;stroke:#fff;stroke-width:2.5;fill:none}
+/* Hero visual */
+.hero-visual{position:relative;background:linear-gradient(140deg,var(--teal-dark) 0%,var(--teal) 50%,#1a7a94 100%);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-glass-grid{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;padding:3px}
+.hg-cell{background:rgba(255,255,255,.06);border-radius:4px}
+.hero-badge{position:absolute;bottom:32px;left:32px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:16px 20px;color:#fff}
+.hero-badge strong{display:block;font-size:28px;font-weight:900;color:var(--orange)}
+.hero-badge span{font-size:12px;opacity:.85}
+.hero-badge2{position:absolute;top:40px;right:28px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:14px 18px;color:#fff;text-align:center}
+.hero-badge2 strong{display:block;font-size:22px;font-weight:900;color:#fff}
+.hero-badge2 span{font-size:11px;opacity:.8}
+.hero-icon-float{font-size:80px;opacity:.12;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* ── TICKER ── */
+.ticker{background:var(--teal);overflow:hidden;padding:12px 0}
+.ticker-inner{display:flex;gap:60px;animation:ticker 20s linear infinite;white-space:nowrap;width:max-content}
+.ticker-inner span{color:#fff;font-size:13px;font-weight:600;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+.ticker-inner span::before{content:'◆';color:var(--orange);font-size:8px}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── PRODUCTS ── */
+.products{padding:80px 0;background:var(--light)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+.prod-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:all .3s;cursor:pointer}
+.prod-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(15,157,148,.12);border-color:var(--teal)}
+.prod-card:hover .prod-more{color:var(--orange)}
+.prod-thumb{height:160px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#f0f0f0;}
+.prod-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.prod-thumb-1{background:linear-gradient(135deg,#e0f7f6,#b8ecea)}
+.prod-thumb-2{background:linear-gradient(135deg,#e8f4fd,#c4dff7)}
+.prod-thumb-3{background:linear-gradient(135deg,#fdf3e0,#f9dec9)}
+.prod-thumb-4{background:linear-gradient(135deg,#e8f5e0,#c8e8b8)}
+.prod-thumb-5{background:linear-gradient(135deg,#f0e8fd,#d8c4f5)}
+.prod-thumb-6{background:linear-gradient(135deg,#fde8f0,#f5c4d8)}
+.prod-thumb-7{background:linear-gradient(135deg,#e8f0fd,#b8c8f5)}
+.prod-thumb-8{background:linear-gradient(135deg,#fde8e8,#f5b8b8)}
+.prod-thumb-9{background:linear-gradient(135deg,#e8fdf0,#b8f0c8)}
+.prod-thumb-10{background:linear-gradient(135deg,#fdf8e0,#f5e8b8)}
+.prod-info{padding:16px}
+.prod-label{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.prod-label svg{width:18px;height:18px;stroke:var(--teal);stroke-width:1.8;fill:none;flex-shrink:0}
+.prod-label h3{font-size:14px;font-weight:700;color:var(--dark)}
+.prod-info p{font-size:12px;color:var(--gray);line-height:1.55;margin-bottom:10px}
+.prod-more{font-size:12px;font-weight:700;color:var(--teal);text-decoration:none;display:inline-flex;align-items:center;gap:4px;transition:all .2s}
+.prod-more:hover{gap:8px}
+
+/* ── WHY ── */
+.why{padding:80px 0;background:var(--white)}
+.why-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center}
+.why-left .section-badge{display:block}
+.why-left p{color:var(--gray);font-size:15px;line-height:1.8;margin-bottom:32px;max-width:420px}
+.stats-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stat-box{background:var(--light);border-radius:12px;padding:22px 16px;text-align:center;border:1px solid var(--border);transition:.3s}
+.stat-box:hover{border-color:var(--teal);background:var(--teal-light)}
+.stat-num{font-size:32px;font-weight:900;color:var(--orange);display:block;line-height:1}
+.stat-suf{color:var(--teal);font-size:24px;font-weight:900}
+.stat-label{font-size:11px;color:var(--gray);margin-top:6px;line-height:1.4;font-weight:500}
+.feature-list{display:flex;flex-direction:column;gap:14px;margin-top:32px}
+.feature-item{display:flex;align-items:flex-start;gap:14px;padding:16px;background:var(--light);border-radius:10px;border:1px solid var(--border)}
+.feature-icon{width:40px;height:40px;background:var(--teal-light);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feature-icon svg{width:20px;height:20px;stroke:var(--teal);stroke-width:1.8;fill:none}
+.feature-item h4{font-size:14px;font-weight:700;color:var(--dark);margin-bottom:3px}
+.feature-item p{font-size:12px;color:var(--gray);line-height:1.5}
+
+/* ── GALLERY ── */
+.gallery{padding:80px 0;background:var(--light)}
+.gallery-filter{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
+.filter-btn{padding:8px 18px;border-radius:25px;border:1.5px solid var(--border);background:#fff;color:var(--gray);font-size:13px;font-weight:600;cursor:pointer;transition:.2s}
+.filter-btn:hover,.filter-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:36px}
+.gal-item{border-radius:12px;overflow:hidden;cursor:pointer;position:relative;transition:.3s;min-height:200px;}
+.gal-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.gal-item:hover{transform:scale(1.02);box-shadow:0 12px 35px rgba(0,0,0,.15)}
+.gal-item:hover .gal-overlay{opacity:1}
+.gal-item:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gal-inner{width:100%;height:100%;min-height:200px;display:flex;align-items:center;justify-content:center;font-size:48px}
+.gal-overlay{position:absolute;inset:0;background:rgba(15,157,148,.8);display:flex;align-items:center;justify-content:center;opacity:0;transition:.3s}
+.gal-overlay svg{width:32px;height:32px;stroke:#fff;fill:none;stroke-width:1.8}
+.g1{background:linear-gradient(135deg,#0a7a72,#0F9D94)}
+.g2{background:linear-gradient(135deg,#1a5f7a,#2480a0)}
+.g3{background:linear-gradient(135deg,#2d4a6e,#1a5f7a)}
+.g4{background:linear-gradient(135deg,#0a5252,#0F9D94)}
+.g5{background:linear-gradient(135deg,#1a3a6e,#2460a0)}
+.g6{background:linear-gradient(135deg,#3a2d6e,#6040a0)}
+.g7{background:linear-gradient(135deg,#6e2d1a,#a04020)}
+
+/* ── TESTIMONIALS ── */
+.testimonials{padding:80px 0;background:linear-gradient(135deg,#0a1f2e 0%,#0a3d38 50%,#0F9D94 100%);position:relative;overflow:hidden}
+.testimonials::before{content:'';position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:rgba(247,154,30,.06);border-radius:50%}
+.testimonials .section-badge{color:var(--orange)}
+.testimonials .section-title{color:#fff}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testi-card{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:28px;transition:.3s}
+.testi-card:hover{background:rgba(255,255,255,.12);transform:translateY(-4px)}
+.testi-stars{display:flex;gap:3px;margin-bottom:14px}
+.testi-stars svg{width:16px;height:16px;fill:var(--orange)}
+.testi-text{color:rgba(255,255,255,.85);font-size:14px;line-height:1.75;margin-bottom:20px;font-style:italic}
+.testi-footer{display:flex;align-items:center;gap:12px}
+.testi-avatar{width:40px;height:40px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:14px;flex-shrink:0}
+.testi-meta strong{display:block;color:#fff;font-size:14px;font-weight:700}
+.testi-meta span{color:rgba(255,255,255,.55);font-size:12px}
+
+/* ── CONTACT ── */
+.contact{padding:80px 0;background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+.contact-info-title{font-size:26px;font-weight:800;color:var(--dark);margin-bottom:8px}
+.contact-info-sub{color:var(--gray);font-size:14px;line-height:1.7;margin-bottom:32px}
+.info-card{display:flex;gap:16px;align-items:flex-start;padding:18px;background:var(--light);border-radius:12px;margin-bottom:14px;border:1px solid var(--border);transition:.2s}
+.info-card:hover{border-color:var(--teal);background:var(--teal-light)}
+.info-card-icon{width:44px;height:44px;background:var(--teal-light);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.info-card-icon svg{width:22px;height:22px;stroke:var(--teal);stroke-width:1.8;fill:none}
+.info-card h4{font-size:13px;font-weight:700;color:var(--dark);margin-bottom:3px}
+.info-card p{font-size:13px;color:var(--gray);line-height:1.6}
+.info-card a{color:var(--teal);text-decoration:none}
+.contact-form-wrap{background:var(--light);border-radius:16px;padding:36px;border:1px solid var(--border)}
+.form-title{font-size:20px;font-weight:800;color:var(--dark);margin-bottom:24px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:12px;font-weight:700;color:var(--mid);margin-bottom:6px;letter-spacing:.5px;text-transform:uppercase}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:8px;font-size:14px;color:var(--dark);outline:none;background:#fff;font-family:inherit;transition:.25s}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,157,148,.1)}
+.form-group textarea{height:120px;resize:vertical}
+.btn-send{width:100%;background:var(--orange);color:#fff;padding:15px;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:.25s;display:flex;align-items:center;justify-content:center;gap:10px}
+.btn-send:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(247,154,30,.35)}
+.btn-send svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2}
+
+/* ── FLOATING ── */
+.float-btns{position:fixed;right:18px;bottom:24px;display:flex;flex-direction:column;gap:10px;z-index:900}
+.fab{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:.3s}
+.fab:hover{transform:scale(1.12);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.fab svg{width:22px;height:22px;fill:none;stroke-width:1.8}
+.fab-wa{background:#25D366}
+.fab-wa svg{stroke:#fff}
+.fab-call{background:var(--teal)}
+.fab-call svg{stroke:#fff}
+.fab-q{background:var(--orange);width:52px;height:52px;border-radius:12px;font-size:10px;font-weight:800;color:#fff;text-align:center;line-height:1.2;padding:8px;font-family:inherit}
+
+/* ── FOOTER ── */
+footer{background:#0a1628;color:rgba(255,255,255,.65);padding:60px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:50px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand p{font-size:13px;line-height:1.75;margin:16px 0 20px}
+.footer-social{display:flex;gap:10px}
+.soc-btn{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:.2s;text-decoration:none}
+.soc-btn:hover{background:var(--teal)}
+.soc-btn svg{width:16px;height:16px;fill:rgba(255,255,255,.7)}
+.footer-col h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-col a{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;margin-bottom:10px;transition:.2s}
+.footer-col a:hover{color:var(--orange)}
+.footer-col a svg{width:14px;height:14px;stroke:var(--teal);fill:none;stroke-width:2;flex-shrink:0}
+.footer-col p.fc-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;margin-bottom:10px;line-height:1.55}
+.footer-col p.fc-item svg{width:14px;height:14px;stroke:var(--teal);fill:none;stroke-width:2;margin-top:2px;flex-shrink:0}
+.footer-bottom{padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-size:12px;flex-wrap:wrap;gap:10px}
+.footer-logo-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.footer-logo-icon{width:44px;height:44px;background:rgba(255,255,255,.08);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.footer-logo-icon svg{width:28px;height:28px}
+
+/* ── RESPONSIVE ── */
+@media(max-width:992px){
+  .hero{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .hero-content{padding:50px 0}
+  .why-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .gallery-grid .gal-item:nth-child(1){grid-column:span 2;grid-row:span 1}
+  .testi-grid{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .stats-wrap{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .mob-menu{display:block}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid .gal-item:nth-child(1){grid-column:span 2;grid-row:span 1}
+  .testi-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+  .stats-wrap{grid-template-columns:repeat(2,1fr)}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  section,.products,.why,.gallery,.testimonials,.contact{padding:55px 0}
+  .hero-content{padding:40px 0}
+  .stats-wrap{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header id="header">
+<div class="container">
+<nav class="nav-wrap">
+  <!-- LOGO using actual image -->
+  <a class="logo" href="#">
+    <img src="imgfolder/ChatGPT Image Jun 13, 2026, 10_51_53 PM.png" alt="AL RAHA Glass World Logo" style="height:54px;width:auto;display:block;object-fit:contain;">
+  </a>
+
+  <!-- Desktop Nav -->
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+
+  <div class="nav-cta">
+    <a class="call-btn" href="tel:9207237238">
+      <svg width="14" height="14" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 12a19.79 19.79 0 01-3-8.57A2 2 0 012.17 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.06 6.06l1.27-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now
+    </a>
+  </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger" onclick="toggleMob()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+</div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mob-menu" id="mobMenu">
+  <a href="#home" onclick="closeMob()">🏠 Home</a>
+  <a href="#about" onclick="closeMob()">ℹ️ About Us</a>
+  <a href="#products" onclick="closeMob()">🔲 Products</a>
+  <a href="#gallery" onclick="closeMob()">🖼️ Gallery</a>
+  <a href="#testimonials" onclick="closeMob()">⭐ Testimonials</a>
+  <a href="#contact" onclick="closeMob()">📞 Contact Us</a>
+  <a href="tel:9207237238" class="mob-call" style="margin-top:20px">📞 Call: 9207237238</a>
+  <a href="tel:7736184469" class="mob-call" style="margin-top:10px;background:var(--teal)">📞 Call: 7736184469</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="home">
+  <div class="hero-content container" style="padding-right:0">
+    <div class="hero-eyebrow"><div class="eyebrow-dot"></div><span class="eyebrow-text">Premium Glass Solutions · Malappuram, Kerala</span></div>
+    <h1>Transforming Spaces<em>Through Glass Excellence</em></h1>
+    <p class="hero-sub">Premium quality glass, mirrors and architectural solutions for homes, offices and commercial spaces across Kerala. Crafted with precision. Installed with care.</p>
+    <div class="hero-btns">
+      <a class="btn-teal" href="#products">Explore Products →</a>
+      <a class="btn-outline" href="#contact">Request Quote →</a>
+    </div>
+    <div class="hero-feats">
+      <div class="feat">
+        <div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+        Premium Quality Materials
+      </div>
+      <div class="feat">
+        <div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+        Expert Installation Team
+      </div>
+      <div class="feat">
+        <div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+        100% Customer Satisfaction
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual" style="padding:0;background:#000;">
+    <img src="imgfolder/hero-glass.jpg" alt="Premium Glass Interior" style="width:100%;height:100%;object-fit:cover;opacity:.85;display:block;">
+    <div class="hero-badge">
+      <strong>1000+</strong>
+      <span>Projects Completed</span>
+    </div>
+    <div class="hero-badge2">
+      <strong>6+</strong>
+      <span>Years of<br>Experience</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker">
+  <div class="ticker-inner" id="ticker">
+    <span>Toughened Glass</span>
+    <span>Frosted Glass</span>
+    <span>Etched Glass</span>
+    <span>Glass Railings</span>
+    <span>Office Partitions</span>
+    <span>Shower Cubicles</span>
+    <span>Mirrors</span>
+    <span>Decorative Glass</span>
+    <span>Glass Doors</span>
+    <span>Staircase Glass</span>
+    <span>Toughened Glass</span>
+    <span>Frosted Glass</span>
+    <span>Etched Glass</span>
+    <span>Glass Railings</span>
+    <span>Office Partitions</span>
+    <span>Shower Cubicles</span>
+    <span>Mirrors</span>
+    <span>Decorative Glass</span>
+    <span>Glass Doors</span>
+    <span>Staircase Glass</span>
+  </div>
+</div>
+
+<!-- ═══ PRODUCTS ═══ -->
+<section class="products" id="products">
+<div class="container">
+  <div class="text-center">
+    <span class="section-badge">Our Products & Services</span>
+    <h2 class="section-title">What We <span>Offer</span></h2>
+    <div class="divider center"></div>
+  </div>
+  <div class="products-grid">
+
+    <div class="prod-card" onclick="openModal('Toughened Glass','imgfolder/p-toughened.jpg','High strength safety glass engineered for every space. Up to 5x stronger than regular glass. Ideal for doors, windows, partitions, balustrades and any safety-critical application. Available in 4mm, 6mm, 8mm, 10mm and 12mm thickness.','✅ 5x Stronger than Regular Glass|✅ Heat &amp; Impact Resistant|✅ Safety Certified|✅ Custom Sizes Available|✅ Suitable for Interior &amp; Exterior')">
+      <div class="prod-thumb prod-thumb-1"><img src="imgfolder/p-toughened.jpg" alt="Toughened Glass" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1" fill="rgba(15,157,148,.2)"/></svg><h3>Toughened Glass</h3></div>
+        <p>High strength safety glass engineered for every space. Up to 5x stronger than regular glass.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Frosted Glass','imgfolder/p-frosted.jpg','Privacy with style. Frosted glass is perfect for modern interiors, bathrooms, office spaces and partition walls. Allows natural light while maintaining complete privacy. Available in various opacity levels.','✅ Full Privacy with Natural Light|✅ Scratch Resistant Surface|✅ Easy to Clean|✅ Multiple Opacity Levels|✅ Perfect for Bathrooms &amp; Offices')">
+      <div class="prod-thumb prod-thumb-2"><img src="imgfolder/p-frosted.jpg" alt="Frosted Glass" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18" stroke-dasharray="3 2"/></svg><h3>Frosted Glass</h3></div>
+        <p>Privacy with style. Perfect for modern interiors, bathrooms and office spaces.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Etched Glass','imgfolder/p-decorative.jpg','Elegant designs etched to perfection — custom patterns for homes and businesses. We offer a wide range of floral, geometric and custom motif designs. Perfect for main doors, pooja rooms and feature walls.','✅ 100% Custom Designs|✅ Permanent Etching|✅ Artistic Patterns|✅ Suitable for All Glass Types|✅ Pooja Room &amp; Door Specialists')">
+      <div class="prod-thumb prod-thumb-3"><img src="imgfolder/p-decorative.jpg" alt="Etched Glass" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 8l8 8M16 8l-8 8"/></svg><h3>Etched Glass</h3></div>
+        <p>Elegant designs etched to perfection — custom patterns for homes and businesses.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Glass Railings','imgfolder/p-railing.jpg','Stylish, strong and safe railings for staircases, balconies and terraces. Our toughened glass railings combine safety with aesthetics for a sleek modern look. Available in frameless and semi-frameless designs.','✅ Toughened Safety Glass|✅ Frameless &amp; Semi-Frameless Options|✅ Corrosion-Resistant Fittings|✅ Indoor &amp; Outdoor Use|✅ Professional Installation')">
+      <div class="prod-thumb prod-thumb-4"><img src="imgfolder/p-railing.jpg" alt="Glass Railings" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 20V10M12 20V6M18 20V12"/></svg><h3>Glass Railings</h3></div>
+        <p>Stylish, strong and safe railings for staircases, balconies and terraces.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Office Partitions','imgfolder/p-office.jpg','Smart glass solutions for modern offices — maximise natural light while ensuring complete privacy. Our modular partition systems are easy to install, reconfigure and relocate as your business grows.','✅ Maximises Natural Light|✅ Sound Insulation Available|✅ Modular &amp; Reconfigurable|✅ Frameless &amp; Framed Options|✅ Fire-Rated Glass Available')">
+      <div class="prod-thumb prod-thumb-5"><img src="imgfolder/p-office.jpg" alt="Office Partitions" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="18" rx="1"/><rect x="13" y="3" width="8" height="18" rx="1"/></svg><h3>Office Partitions</h3></div>
+        <p>Smart glass solutions for modern offices — maximise light while ensuring privacy.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Shower Cubicles','imgfolder/p-shower.jpg','Durable and elegant frameless shower enclosures for luxury bathrooms. Our shower cubicles are made from premium 8mm–12mm toughened glass with anti-limescale coating for easy maintenance.','✅ 8mm–12mm Toughened Glass|✅ Frameless &amp; Semi-Frameless|✅ Anti-Limescale Coating|✅ Custom Sizes &amp; Shapes|✅ Premium Chrome/Black Fittings')">
+      <div class="prod-thumb prod-thumb-6"><img src="imgfolder/p-shower.jpg" alt="Shower Cubicles" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 9h8M8 13h8" stroke-dasharray="2 1"/></svg><h3>Shower Cubicles</h3></div>
+        <p>Durable and elegant frameless shower enclosures for luxury bathrooms.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Mirrors','imgfolder/p-mirror.jpg','Enhance your interiors with premium mirrors — custom shapes and sizes available. We offer bathroom mirrors, wardrobe mirrors, decorative wall mirrors and gym mirrors with bevelled or plain edges.','✅ Custom Shapes &amp; Sizes|✅ Bevelled Edge Options|✅ Anti-Moisture Backing|✅ Wardrobe &amp; Bathroom Mirrors|✅ Wall-Mount &amp; Frame Options')">
+      <div class="prod-thumb prod-thumb-7"><img src="imgfolder/p-mirror.jpg" alt="Mirrors" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><ellipse cx="12" cy="12" rx="5" ry="6" fill="rgba(15,157,148,.1)"/></svg><h3>Mirrors</h3></div>
+        <p>Enhance your interiors with premium mirrors — custom shapes and sizes available.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Decorative Glass','imgfolder/p-decorative.jpg','Add beauty and character to your spaces with artistic decorative glass panels. We offer stained glass, painted glass, digital printed glass and textured glass for stunning visual impact.','✅ Stained &amp; Painted Glass|✅ Digital Printed Glass|✅ Textured Patterns|✅ Fully Custom Artwork|✅ Feature Walls &amp; Partitions')">
+      <div class="prod-thumb prod-thumb-8"><img src="imgfolder/p-decorative.jpg" alt="Decorative Glass" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="3"/><circle cx="16" cy="15" r="2.5"/></svg><h3>Decorative Glass</h3></div>
+        <p>Add beauty and character to your spaces with artistic decorative glass panels.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Glass Doors','imgfolder/p-doors.jpg','Elegant, durable and perfectly designed glass doors for homes and offices. We supply and install frameless swing doors, sliding glass doors, folding doors and pivot doors with premium hardware.','✅ Frameless &amp; Framed Options|✅ Swing, Sliding &amp; Folding|✅ Soft-Close Hardware|✅ Toughened Safety Glass|✅ Custom Dimensions')">
+      <div class="prod-thumb prod-thumb-9"><img src="imgfolder/p-doors.jpg" alt="Glass Doors" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><rect x="10" y="10" width="3" height="4" rx="1"/></svg><h3>Glass Doors</h3></div>
+        <p>Elegant, durable and perfectly designed glass doors for homes and offices.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openModal('Staircase Glass','imgfolder/p-staircase.jpg','Modern glass work for staircases and interior architectural features. Our staircase glass panels are made from laminated or toughened glass providing maximum safety and a sleek contemporary look.','✅ Laminated Safety Glass|✅ Anti-Slip Options Available|✅ Custom Cut to Any Shape|✅ Balustrade &amp; Panel Systems|✅ Premium Clamp Fittings')">
+      <div class="prod-thumb prod-thumb-10"><img src="imgfolder/p-staircase.jpg" alt="Staircase Glass" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
+      <div class="prod-info">
+        <div class="prod-label"><svg viewBox="0 0 24 24"><path d="M4 20 L8 14 L12 17 L16 10 L20 6"/><line x1="4" y1="20" x2="20" y2="20"/></svg><h3>Staircase Glass</h3></div>
+        <p>Modern glass work for staircases and interior architectural features.</p>
+        <span class="prod-more">View More →</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ═══ PRODUCT POPUP MODAL ═══ -->
+<div id="prodModal">
+  <div id="modalBackdrop" onclick="closeModal()"></div>
+  <div id="modalBox">
+
+    <!-- ── Image Hero with gradient overlay ── -->
+    <div id="modalImgWrap">
+      <img id="modalImg" src="" alt="">
+      <div id="modalImgOverlay"></div>
+      <!-- Close btn on image -->
+      <button id="modalCloseBtn" onclick="closeModal()" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <!-- Title on image bottom -->
+      <div id="modalImgTitle">
+        <div id="modalTitleBadge"></div>
+        <h2 id="modalTitle"></h2>
+      </div>
+    </div>
+
+    <!-- ── Scrollable Content ── -->
+    <div id="modalContent">
+
+      <!-- Description -->
+      <p id="modalDesc"></p>
+
+      <!-- Features grid -->
+      <div id="modalFeatures"></div>
+
+      <!-- Divider -->
+      <div class="modal-divider"></div>
+
+      <!-- CTA Label -->
+      <p class="modal-cta-label">Get a free quote for this product</p>
+
+      <!-- Buttons -->
+      <div id="modalBtns">
+        <a id="modalWA" href="#" target="_blank" rel="noopener" class="mbtn mbtn-wa">
+          <img src="imgfolder/whatsapp.png" alt="WA" class="mbtn-waimg" onerror="this.outerHTML='<svg width=22 height=22 viewBox=\'0 0 24 24\' fill=\'%23fff\'><path d=\'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z M11.834 2C6.686 2 2.5 6.186 2.5 11.334c0 1.888.536 3.65 1.462 5.148L2 22l5.667-1.926a9.284 9.284 0 004.167.978c5.148 0 9.334-4.186 9.334-9.334C21.168 6.37 16.982 2 11.834 2z\'></path></svg>'">
+          <span>Chat on WhatsApp</span>
+        </a>
+        <a href="tel:9207237238" class="mbtn mbtn-call">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 12a19.79 19.79 0 01-3-8.57A2 2 0 012.17 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.06 6.06l1.27-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>Call Now</span>
+        </a>
+      </div>
+
+      <!-- Safe area spacer for mobile -->
+      <div style="height:env(safe-area-inset-bottom,16px)"></div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+/* ── Modal Base ── */
+#prodModal{
+  display:none;
+  position:fixed;inset:0;
+  z-index:9999;
+  align-items:flex-end;     /* slides up from bottom on mobile */
+  justify-content:center;
+}
+#prodModal.show{ display:flex; }
+
+/* Backdrop */
+#modalBackdrop{
+  position:absolute;inset:0;
+  background:rgba(8,16,32,.7);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  animation:fadeIn .28s ease;
+}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* Modal Box */
+#modalBox{
+  position:relative;
+  width:100%;
+  max-width:860px;
+  background:#fff;
+  border-radius:24px 24px 0 0;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  max-height:96vh;
+  animation:slideUp .32s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 -12px 60px rgba(0,0,0,.25);
+}
+@keyframes slideUp{from{transform:translateY(100%);opacity:.5}to{transform:translateY(0);opacity:1}}
+
+/* Image area */
+#modalImgWrap{
+  position:relative;
+  width:100%;
+  height:240px;
+  flex-shrink:0;
+  overflow:hidden;
+}
+#modalImg{
+  width:100%;height:100%;
+  object-fit:cover;display:block;
+}
+#modalImgOverlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom, rgba(0,0,0,.08) 0%, rgba(0,0,0,.55) 100%);
+}
+
+/* Close button */
+#modalCloseBtn{
+  position:absolute;top:14px;right:14px;
+  width:38px;height:38px;
+  border-radius:50%;
+  background:rgba(255,255,255,.2);
+  backdrop-filter:blur(8px);
+  border:1.5px solid rgba(255,255,255,.35);
+  color:#fff;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:.2s;
+  z-index:5;
+}
+#modalCloseBtn:hover{ background:rgba(255,255,255,.35); }
+#modalCloseBtn:active{ transform:scale(.9); }
+
+/* Title on image */
+#modalImgTitle{
+  position:absolute;bottom:16px;left:20px;right:60px;
+}
+#modalTitleBadge{
+  display:inline-block;
+  background:var(--orange);
+  width:36px;height:4px;
+  border-radius:2px;
+  margin-bottom:8px;
+}
+#modalTitle{
+  font-size:22px;
+  font-weight:900;
+  color:#fff;
+  line-height:1.2;
+  text-shadow:0 2px 12px rgba(0,0,0,.4);
+}
+
+/* Scrollable content */
+#modalContent{
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  padding:22px 20px 20px;
+  flex:1;
+}
+
+/* Drag handle hint */
+#modalContent::before{
+  content:'';
+  display:block;
+  width:40px;height:4px;
+  background:#d0d8e4;
+  border-radius:2px;
+  margin:0 auto 18px;
+}
+
+#modalDesc{
+  font-size:14px;
+  color:var(--gray);
+  line-height:1.8;
+  margin-bottom:18px;
+}
+
+/* Features */
+#modalFeatures{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-bottom:20px;
+}
+.modal-feat-item{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:12.5px;
+  color:var(--dark);
+  font-weight:600;
+  padding:9px 12px;
+  background:#f0faf9;
+  border-radius:8px;
+  border:1px solid #c8ece9;
+  line-height:1.35;
+}
+.modal-feat-check{
+  width:18px;height:18px;
+  background:var(--teal);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.modal-feat-check svg{ width:10px;height:10px;stroke:#fff;fill:none;stroke-width:2.5; }
+
+.modal-divider{ height:1px;background:#edf0f5;margin:16px 0; }
+
+.modal-cta-label{
+  font-size:13px;
+  color:var(--gray);
+  text-align:center;
+  margin-bottom:14px;
+  font-weight:500;
+}
+
+/* Buttons */
+#modalBtns{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.mbtn{
+  display:flex;align-items:center;justify-content:center;
+  gap:9px;
+  padding:15px 12px;
+  border-radius:12px;
+  font-size:15px;
+  font-weight:700;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+  transition:all .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.mbtn:active{ transform:scale(.96); }
+.mbtn-wa{
+  background:#25D366;
+  color:#fff;
+  box-shadow:0 4px 16px rgba(37,211,102,.3);
+}
+.mbtn-wa:hover{ background:#1da851; }
+.mbtn-call{
+  background:var(--teal);
+  color:#fff;
+  box-shadow:0 4px 16px rgba(15,157,148,.3);
+}
+.mbtn-call:hover{ background:var(--teal-dark); }
+.mbtn-waimg{
+  width:24px;height:24px;
+  border-radius:50%;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+/* ── DESKTOP: left image | right content ── */
+@media(min-width:600px){
+  #prodModal{ align-items:center; padding:24px; }
+
+  #modalBox{
+    border-radius:20px;
+    max-height:88vh;
+    max-width:920px;
+    flex-direction:row;   /* ← side by side */
+    animation:scaleIn .3s cubic-bezier(.4,0,.2,1);
+    overflow:hidden;
+  }
+  @keyframes scaleIn{from{transform:scale(.93);opacity:0}to{transform:scale(1);opacity:1}}
+
+  /* Left: image fills full height */
+  #modalImgWrap{
+    width:42%;
+    min-width:300px;
+    height:auto;        /* full height of modal */
+    flex-shrink:0;
+    border-radius:0;
+  }
+  #modalImg{ height:100%;object-fit:cover; }
+
+  /* Title stays on image bottom-left */
+  #modalTitle{ font-size:24px; }
+  #modalImgTitle{ bottom:24px;left:24px;right:20px; }
+
+  /* Right: scrollable content */
+  #modalContent{
+    flex:1;
+    overflow-y:auto;
+    padding:32px 28px 28px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+  }
+  #modalContent::before{ display:none; }
+  #modalDesc{ font-size:15px; }
+  .modal-feat-item{ font-size:13px; padding:10px 14px; }
+  #modalFeatures{ grid-template-columns:1fr 1fr; }
+  #modalBtns{ grid-template-columns:1fr 1fr; gap:12px; }
+  .mbtn{ padding:15px 20px; font-size:15px; }
+
+  /* Close btn top-right of content panel */
+  #modalCloseBtn{
+    position:absolute;
+    top:14px;right:14px;
+    background:rgba(0,0,0,.08);
+    border-color:rgba(0,0,0,.12);
+    color:#555;
+  }
+  #modalCloseBtn:hover{ background:rgba(0,0,0,.15); }
+}
+
+/* ── MOBILE: true fullscreen ── */
+@media(max-width:599px){
+  #modalBox{
+    border-radius:20px 20px 0 0;
+    max-height:100vh;
+    height:100vh;
+    border-radius:0;
+  }
+  #modalImgWrap{ height:220px; }
+  #modalTitle{ font-size:20px; }
+  #modalFeatures{ grid-template-columns:1fr; }
+  #modalBtns{ grid-template-columns:1fr; }
+  .mbtn{ padding:16px; font-size:16px; }
+}
+</style>
+
+<!-- ═══ WHY CHOOSE US ═══ -->
+<section class="why" id="about">
+<div class="container">
+  <div class="why-grid">
+    <div class="why-left">
+      <span class="section-badge">Why Choose Us</span>
+      <h2 class="section-title">Quality You<br>Can <span>Trust</span></h2>
+      <div class="divider"></div>
+      <p>We combine innovation, quality and craftsmanship to deliver the best glass solutions across Kerala. Every project is handled with precision, care, and a commitment to lasting excellence.</p>
+      <a class="btn-teal" href="#contact">Know More About Us →</a>
+
+      <div class="feature-list" style="margin-top:28px">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div><h4>Premium Materials Only</h4><p>We source only certified, high-grade glass from trusted manufacturers.</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div><h4>Experienced Installation Team</h4><p>Skilled professionals with 6+ years of hands-on installation experience.</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div><h4>On-Time Delivery Guarantee</h4><p>We commit to deadlines and deliver every project on schedule.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="stats-wrap">
+        <div class="stat-box"><span class="stat-num" data-target="6" data-suffix="+">0+</span><div class="stat-label">Years of<br>Experience</div></div>
+        <div class="stat-box"><span class="stat-num" data-target="1000" data-suffix="+">0+</span><div class="stat-label">Projects<br>Completed</div></div>
+        <div class="stat-box"><span class="stat-num" data-target="500" data-suffix="+">0+</span><div class="stat-label">Happy<br>Customers</div></div>
+        <div class="stat-box"><span class="stat-num" data-target="20" data-suffix="+">0+</span><div class="stat-label">Expert<br>Team Members</div></div>
+        <div class="stat-box"><span class="stat-num" data-target="100" data-suffix="%">0%</span><div class="stat-label">Quality<br>Guarantee</div></div>
+        <div class="stat-box"><span class="stat-num" data-target="15" data-suffix="+">0+</span><div class="stat-label">Product<br>Categories</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section class="gallery" id="gallery">
+<div class="container">
+  <div class="text-center">
+    <span class="section-badge">Our Recent Projects</span>
+    <h2 class="section-title">Featured <span>Work</span></h2>
+    <div class="divider center"></div>
+  </div>
+  <div class="gallery-filter">
+    <button class="filter-btn active">All Projects</button>
+    <button class="filter-btn">Residential</button>
+    <button class="filter-btn">Commercial</button>
+    <button class="filter-btn">Office Partitions</button>
+    <button class="filter-btn">Glass Railings</button>
+  </div>
+  <div class="gallery-grid">
+    <div class="gal-item g1" style="background:#000;"><img src="imgfolder/p-toughened.jpg" alt="Toughened Glass Project" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+    <div class="gal-item g2" style="background:#000;"><img src="imgfolder/p-shower.jpg" alt="Shower Cubicle" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g3" style="background:#000;"><img src="imgfolder/p-office.jpg" alt="Office Partition" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g4" style="background:#000;"><img src="imgfolder/g-4.jpg" alt="Glass Project" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g5" style="background:#000;"><img src="imgfolder/p-frosted.jpg" alt="Frosted Glass" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g6" style="background:#000;"><img src="imgfolder/p-railing.jpg" alt="Glass Railing" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g7" style="background:#000;"><img src="imgfolder/p-mirror.jpg" alt="Mirror" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g1" style="background:#000;"><img src="imgfolder/g-2.jpg" alt="Glass Project" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g3" style="background:#000;"><img src="imgfolder/p-staircase.jpg" alt="Staircase Glass" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g4" style="background:#000;"><img src="imgfolder/p-doors.jpg" alt="Glass Doors" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g5" style="background:#000;"><img src="imgfolder/p-decorative.jpg" alt="Decorative Glass" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+    <div class="gal-item g6" style="background:#000;"><img src="imgfolder/g-3.jpg" alt="Glass Project" style="width:100%;height:100%;object-fit:cover;display:block;"><div class="gal-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div></div>
+  </div>
+  <div class="text-center"><a class="btn-orange" href="#contact">View All Projects →</a></div>
+</div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="testimonials" id="testimonials">
+<div class="container">
+  <div class="text-center">
+    <span class="section-badge">Testimonials</span>
+    <h2 class="section-title" style="color:#fff">What Our Customers <span>Say</span></h2>
+    <div class="divider center"></div>
+  </div>
+
+  <!-- Carousel Wrapper -->
+  <div class="testi-carousel-outer">
+    <div class="testi-track" id="testiTrack">
+
+      <!-- Card 1 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-text">"Excellent work! They installed glass railings in our new home. The quality and finish is absolutely outstanding. The team was professional and completed the work on time. Highly recommend Al Raha Glass World."</p>
+        <div class="testi-footer">
+          <div class="testi-avatar">MA</div>
+          <div class="testi-meta"><strong>Muhammed Ashraf</strong><span>📍 Malappuram</span></div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-text">"We got our entire office partitions done by Al Raha. Professional team, great quality glass, completed on time. The workspace looks completely transformed. Very satisfied with the results."</p>
+        <div class="testi-footer">
+          <div class="testi-avatar" style="background:var(--teal)">RP</div>
+          <div class="testi-meta"><strong>Rajan Pillai</strong><span>📍 Calicut</span></div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-text">"Beautiful shower cubicle installation. The team was neat, professional and the end result looks absolutely premium. The glass quality is top-notch. Will definitely work with them again."</p>
+        <div class="testi-footer">
+          <div class="testi-avatar" style="background:#8a2060">FN</div>
+          <div class="testi-meta"><strong>Fathima Noor</strong><span>📍 Tirur</span></div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-text">"Got my home mirrors and decorative glass done from here. The designs are beautiful and the installation was flawless. Very reasonable pricing too. Everyone who visits asks where I got it done!"</p>
+        <div class="testi-footer">
+          <div class="testi-avatar" style="background:#1a6e5a">AK</div>
+          <div class="testi-meta"><strong>Aisha Kabeer</strong><span>📍 Tirur</span></div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-text">"Al Raha did the staircase glass railing for our villa. The craftsmanship is superb — clean lines, perfectly level, and extremely sturdy. Our guests always compliment it. 100% recommended!"</p>
+        <div class="testi-footer">
+          <div class="testi-avatar" style="background:#2d5fa0">SM</div>
+          <div class="testi-meta"><strong>Suresh Menon</strong><span>📍 Manjeri</span></div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-text">"We renovated our restaurant with frosted glass partitions and glass doors from Al Raha. The transformation is incredible — modern, elegant and exactly what we envisioned. Great team, great work!"</p>
+        <div class="testi-footer">
+          <div class="testi-avatar" style="background:#a05020">NK</div>
+          <div class="testi-meta"><strong>Noufal Kutty</strong><span>📍 Perinthalmanna</span></div>
+        </div>
+      </div>
+
+    </div><!-- end testi-track -->
+  </div><!-- end carousel-outer -->
+
+  <!-- Dots -->
+  <div class="testi-dots" id="testiDots"></div>
+
+</div>
+</section>
+
+<style>
+.testi-carousel-outer{overflow:hidden;position:relative;width:100%;}
+.testi-track{display:flex;gap:20px;transition:transform .5s cubic-bezier(.4,0,.2,1);will-change:transform;}
+.testi-card{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:28px;flex:0 0 calc(33.333% - 14px);min-width:calc(33.333% - 14px);transition:.3s;box-sizing:border-box;}
+.testi-card:hover{background:rgba(255,255,255,.14);transform:translateY(-4px);}
+.testi-dots{display:flex;justify-content:center;gap:8px;margin-top:28px;}
+.testi-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:.3s;border:none;}
+.testi-dot.active{background:var(--orange);width:24px;border-radius:4px;}
+@media(max-width:900px){.testi-card{flex:0 0 calc(50% - 10px);min-width:calc(50% - 10px);}}
+@media(max-width:580px){.testi-card{flex:0 0 100%;min-width:100%;}}
+</style>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact" id="contact">
+<div class="container">
+  <div class="text-center">
+    <span class="section-badge">Get In Touch</span>
+    <h2 class="section-title">Contact <span>Us</span></h2>
+    <div class="divider center"></div>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <h3 class="contact-info-title">Let's Work Together</h3>
+      <p class="contact-info-sub">Visit our showroom or reach out — we'd love to discuss your glass project and provide a free consultation.</p>
+
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <h4>Our Location</h4>
+          <p>Munduparamba, Kavungal Bypass Road,<br>Malappuram, Kerala</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 12a19.79 19.79 0 01-3-8.57A2 2 0 012.17 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.06 6.06l1.27-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <h4>Phone Numbers</h4>
+          <p><a href="tel:9207237238">9207237238</a> &nbsp;|&nbsp; <a href="tel:7736184469">7736184469</a></p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <h4>Email Address</h4>
+          <p><a href="mailto:alrahaglassworld@gmail.com">alrahaglassworld@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <div>
+          <h4>Website & Social</h4>
+          <p>www.alrahaglassworld.com &nbsp;|&nbsp; @alrahaglassworld</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h3 class="form-title">Send Us a Message</h3>
+      <div class="form-row">
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Enter your name"></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="Your phone number"></div>
+      </div>
+      <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+      <div class="form-group">
+        <label>Service Interested In</label>
+        <select><option>Select a service</option><option>Toughened Glass</option><option>Frosted Glass</option><option>Etched Glass</option><option>Glass Railings</option><option>Office Partitions</option><option>Shower Cubicles</option><option>Mirrors</option><option>Decorative Glass</option><option>Glass Doors</option><option>Staircase Glass</option></select>
+      </div>
+      <div class="form-group"><label>Your Message</label><textarea placeholder="Tell us about your project..."></textarea></div>
+      <button class="btn-send" onclick="submitForm(this)">
+        <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Send Message
+      </button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo-row">
+        <img src="imgfolder/ChatGPT Image Jun 13, 2026, 10_51_53 PM.png" alt="AL RAHA Glass World Logo" style="height:60px;width:auto;display:block;object-fit:contain;">
+      </div>
+      <p>Premium glass and home decor solutions for modern living and workspaces. Serving Malappuram and all of Kerala with excellence since 2018.</p>
+      <div class="footer-social">
+        <a class="soc-btn" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="rgba(255,255,255,.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.834 2C6.686 2 2.5 6.186 2.5 11.334c0 1.888.536 3.65 1.462 5.148L2 22l5.667-1.926a9.284 9.284 0 004.167.978c5.148 0 9.334-4.186 9.334-9.334C21.168 6.37 16.982 2 11.834 2z"/></svg></a>
+        <a class="soc-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a class="soc-btn" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="rgba(255,255,255,.7)"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Home</a>
+      <a href="#about"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>About Us</a>
+      <a href="#products"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Products</a>
+      <a href="#gallery"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Gallery</a>
+      <a href="#testimonials"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Testimonials</a>
+      <a href="#contact"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Contact Us</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <a href="#contact"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Toughened Glass</a>
+      <a href="#contact"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Frosted Glass</a>
+      <a href="#contact"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Etched Glass</a>
+      <a href="#contact"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Glass Railings</a>
+      <a href="#contact"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Office Partitions</a>
+      <a href="#contact"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>Shower Cubicles</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p class="fc-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Munduparamba, Kavungal Bypass Road, Malappuram, Kerala</p>
+      <p class="fc-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 12 19.79 19.79 0 01.1 3.43 2 2 0 012.17 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.06 6.06l1.27-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>9207237238, 7736184469</p>
+      <p class="fc-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>alrahaglassworld@gmail.com</p>
+      <p class="fc-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>www.alrahaglassworld.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AL RAHA GLASS WORLD & HOME DECOR. All Rights Reserved.</span>
+    <span style="color:rgba(255,255,255,.35)">Designed with ❤️ for Premium Quality</span>
+  </div>
+</div>
+</footer>
+
+<!-- ═══ FLOATING BUTTONS ═══ -->
+<div class="float-btns">
+  <a class="fab fab-wa" href="https://wa.me/919207237238" title="WhatsApp Us" target="_blank" rel="noopener" style="background:none;box-shadow:none;width:54px;height:54px;">
+    <img src="imgfolder/whatsapp.png" alt="WhatsApp" style="width:54px;height:54px;border-radius:50%;object-fit:cover;display:block;box-shadow:0 4px 16px rgba(0,0,0,.25);">
+  </a>
+  <a class="fab fab-call" href="tel:9207237238" title="Call Now">
+    <svg viewBox="0 0 24 24" stroke="#fff" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 12a19.79 19.79 0 01-3-8.57A2 2 0 012.17 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.06 6.06l1.27-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  </a>
+  <a class="fab-q fab" href="#contact" title="Get Quote" style="text-decoration:none">Get<br>Quote</a>
+</div>
+
+<script>
+// ── Mobile Menu ──
+function toggleMob(){
+  const m=document.getElementById('mobMenu');
+  const h=document.getElementById('hamburger');
+  m.classList.toggle('open');
+  h.classList.toggle('open');
+  document.body.style.overflow=m.classList.contains('open')?'hidden':'';
+}
+function closeMob(){
+  document.getElementById('mobMenu').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// ── Sticky Header ──
+window.addEventListener('scroll',()=>{
+  document.getElementById('header').classList.toggle('scrolled',window.scrollY>20);
+});
+
+// ── Active Nav ──
+const secs=[...document.querySelectorAll('section[id]')];
+const links=[...document.querySelectorAll('.nav-links a')];
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id});
+  links.forEach(l=>{l.classList.toggle('active',l.getAttribute('href')==='#'+cur)});
+},{passive:true});
+
+// ── Stat Counter ──
+function runCounters(){
+  document.querySelectorAll('[data-target]').forEach(el=>{
+    const target=+el.dataset.target;
+    const suf=el.dataset.suffix||'+';
+    let n=0;const step=target/50;
+    const t=setInterval(()=>{
+      n=Math.min(n+step,target);
+      el.textContent=Math.round(n)+suf;
+      if(n>=target)clearInterval(t);
+    },20);
+  });
+}
+const statsObs=new IntersectionObserver(e=>{
+  if(e[0].isIntersecting){runCounters();statsObs.disconnect();}
+},{threshold:.4});
+const sw=document.querySelector('.stats-wrap');
+if(sw)statsObs.observe(sw);
+
+// ── Gallery Filter ──
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// ── Contact Form ──
+function submitForm(btn){
+  const orig=btn.innerHTML;
+  btn.innerHTML='<svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;animation:spin .6s linear infinite"><polyline points="20 6 9 17 4 12"/></svg> Sending...';
+  btn.disabled=true;
+  setTimeout(()=>{
+    btn.innerHTML='<svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2"><polyline points="20 6 9 17 4 12"/></svg> Message Sent! We\'ll call you back.';
+    btn.style.background='#22c55e';
+    setTimeout(()=>{btn.innerHTML=orig;btn.disabled=false;btn.style.background='';},4000);
+  },2000);
+}
+
+// ── Product Modal ──
+function openModal(title, img, desc, featuresStr){
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalImg').src = img;
+  document.getElementById('modalImg').alt = title;
+  document.getElementById('modalDesc').textContent = desc;
+  const featWrap = document.getElementById('modalFeatures');
+  featWrap.innerHTML = '';
+  featuresStr.split('|').forEach(f=>{
+    const text = f.replace(/✅\s*/,'').trim();
+    const d = document.createElement('div');
+    d.className = 'modal-feat-item';
+    d.innerHTML = `<div class="modal-feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>${text}`;
+    featWrap.appendChild(d);
+  });
+  const msg = encodeURIComponent('Hello AL RAHA Glass World! I am interested in *' + title + '*. Please share details and pricing. Thank you.');
+  document.getElementById('modalWA').href = 'https://wa.me/919207237238?text=' + msg;
+  const modal = document.getElementById('prodModal');
+  modal.style.display = 'flex';
+  requestAnimationFrame(()=> modal.classList.add('show'));
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  const modal = document.getElementById('prodModal');
+  modal.classList.remove('show');
+  setTimeout(()=>{ modal.style.display = 'none'; }, 280);
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+// ── Smooth scroll ──
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+
+// ── Testimonial Auto Carousel ──
+(function(){
+  const track = document.getElementById('testiTrack');
+  const dotsWrap = document.getElementById('testiDots');
+  if(!track) return;
+  const cards = track.querySelectorAll('.testi-card');
+  const total = cards.length;
+  let perView = window.innerWidth <= 580 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+  let current = 0;
+  let autoTimer;
+
+  // Build dots
+  const maxSlide = total - perView;
+  for(let i = 0; i <= maxSlide; i++){
+    const d = document.createElement('button');
+    d.className = 'testi-dot' + (i===0?' active':'');
+    d.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(d);
+  }
+
+  function goTo(idx){
+    const dots = dotsWrap.querySelectorAll('.testi-dot');
+    const maxS = total - perView;
+    current = Math.max(0, Math.min(idx, maxS));
+    const cardW = cards[0].offsetWidth + 20;
+    track.style.transform = 'translateX(-' + (current * cardW) + 'px)';
+    dots.forEach((d,i) => d.classList.toggle('active', i === current));
+  }
+
+  function next(){
+    const maxS = total - perView;
+    goTo(current >= maxS ? 0 : current + 1);
+  }
+
+  function startAuto(){ autoTimer = setInterval(next, 3500); }
+  function stopAuto(){ clearInterval(autoTimer); }
+
+  startAuto();
+  track.addEventListener('mouseenter', stopAuto);
+  track.addEventListener('mouseleave', startAuto);
+
+  // Touch swipe
+  let tx = 0;
+  track.addEventListener('touchstart', e=>{ tx = e.touches[0].clientX; stopAuto(); }, {passive:true});
+  track.addEventListener('touchend', e=>{
+    const diff = tx - e.changedTouches[0].clientX;
+    if(Math.abs(diff) > 40) diff > 0 ? next() : goTo(current - 1);
+    startAuto();
+  }, {passive:true});
+
+  window.addEventListener('resize', ()=>{
+    perView = window.innerWidth <= 580 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+    goTo(0);
+  });
+})();
+document.querySelectorAll('.prod-card').forEach(c=>{
+  c.addEventListener('click',function(){
+    const r=document.createElement('div');
+    r.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:0;height:0;background:rgba(15,157,148,.08);border-radius:50%;animation:ripple .5s ease-out forwards;pointer-events:none;z-index:9999';
+    document.body.appendChild(r);
+    setTimeout(()=>r.remove(),600);
+  });
+});
+</script>
+<style>
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ripple{to{width:300px;height:300px;opacity:0;margin-left:-150px;margin-top:-150px}}
+</style>
+</body>
+</html>
